@@ -1,0 +1,24 @@
+head
+  title tabataTimer
+
+body
+  +timerNew
+  +timerViz
+
+template(name="timerViz")
+  +each workout
+    .timer-viz-block
+      .timer-viz-work Work
+      .timer-viz-rest Rest
+
+template(name="timerNew")
+  .timer-new
+    label
+      span.form-lbl Work
+      input.form-inp.work(name="work" value="{{work}}" type="number")
+    label
+      span.form-lbl Rest
+      input.form-inp.rest(name="rest" value="{{rest}}" type="number")
+    label
+      span.form-lbl Reps
+      input.form-inp.reps(name="reps" value="{{reps}}" type="number")
