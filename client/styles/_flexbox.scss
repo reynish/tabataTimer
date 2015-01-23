@@ -1,0 +1,22 @@
+@mixin f-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+@mixin f-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+
+@mixin f-layout($direction: row, $){
+    if($direction = row){
+        @include f-row;
+    }
+    if($direction = column){
+        @include f-col;
+    }
+}

@@ -1,0 +1,16 @@
+@import "_flexbox";
+
+$col-work-dark:  #B22324;
+$col-work-light: #FF6566;
+
+$col-rest-dark:  #11B23E;
+$col-rest-light: #4CFF7D;
+
+.timer-viz-work {
+    background: $col-work-light;
+}
+
+
+.timer-viz-rest {
+    background: $col-rest-light;
+}
