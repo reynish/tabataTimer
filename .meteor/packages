@@ -9,3 +9,5 @@ autopublish
 insecure
 mquandalle:bower
 mquandalle:jade
+
+fourseven:scss@2.0.0-beta_1

@@ -1,0 +1,5 @@
+.timer-new {
+    label {
+        @include box(vertical, start, justify);
+    }
+}

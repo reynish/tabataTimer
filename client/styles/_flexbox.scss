@@ -12,11 +12,11 @@
         -ms-flex-direction: row;
             flex-direction: row; }
 
-@mixin f-layout($direction: row, $){
-    if($direction = row){
+@mixin f-layout($direction: row){
+    @if($direction = row){
         @include f-row;
     }
-    if($direction = column){
+    @if($direction = column){
         @include f-col;
     }
 }

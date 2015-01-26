@@ -1,4 +1,13 @@
-@import "_flexbox";
+@import "settings/prefixer";
+@import "settings/px-to-em";
+@import "settings/asset-pipeline";
+
+
+@import "addons/_prefixer";
+@import "css3/_flex-box";
+
+@import "_timerNew";
+
 
 $col-work-dark:  #B22324;
 $col-work-light: #FF6566;
@@ -16,8 +25,4 @@ body {
 
 .timer-viz-rest {
     background: $col-rest-light;
-}
-
-.something {
-    // @include box(horizontal, start, stretch);
 }
