@@ -6,11 +6,18 @@ $col-work-light: #FF6566;
 $col-rest-dark:  #11B23E;
 $col-rest-light: #4CFF7D;
 
+body {
+    background: aqua;
+}
+
 .timer-viz-work {
     background: $col-work-light;
 }
 
-
 .timer-viz-rest {
     background: $col-rest-light;
+}
+
+.something {
+    // @include box(horizontal, start, stretch);
 }
